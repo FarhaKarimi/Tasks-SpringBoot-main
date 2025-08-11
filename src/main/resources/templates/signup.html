@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="fa" dir="rtl">
+<head>
+    <title>ثبت نام</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+          crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            direction: rtl;
+            text-align: right;
+        }
+        .container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="mb-4">ثبت نام</h2>
+            <form th:action="@{/signup}" method="post">
+                <div class="form-group mb-3">
+                    <label for="username">نام کاربری:</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="password">رمز عبور:</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="confirmPassword">تأیید رمز عبور:</label>
+                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">ثبت نام</button>
+                <a href="/signin" class="btn btn-secondary ms-2">ورود</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
