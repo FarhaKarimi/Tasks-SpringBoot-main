@@ -43,12 +43,10 @@ A simple To-Do List application built with Spring Boot, Thymeleaf, and Spring Se
    ```
 
 3. Update `application.properties` with your database configuration:
-
-   ```properties
+   
 spring.datasource.url=jdbc:postgresql://localhost:5432/db_todolist
 spring.datasource.username=postgres
 spring.datasource.password=root
-
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 spring.jpa.hibernate.ddl-auto=update
 
