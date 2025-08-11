@@ -1,68 +1,81 @@
-# Spring Boot To-Do List App
 
-A simple To-Do List application built with Spring Boot, Thymeleaf, and Spring Security. This application allows users to create, read, update, and delete tasks in their to-do list. It also includes user account creation and login functionalities.
+Spring Boot To-Do List App
+A simple To-Do List application built with Spring Boot, Thymeleaf, and Spring Security. This app allows users to create, read, update, and delete tasks. It also supports user registration and secure login.
 
-## Features
+Features
+CRUD Operations: Create, read, update, and delete tasks.
 
-- **CRUD Operations**: Users can create, read, update, and delete tasks.
-- **Account Creation**: New users can register and create their accounts.
-- **User Authentication**: Secure login functionality using Spring Security.
-- **Password Hashing**: User passwords are securely hashed for storage.
-- **Thymeleaf Templating**: Frontend views are rendered using Thymeleaf templates.
+User Registration: New users can sign up and create accounts.
 
-## Technologies Used
+User Authentication: Secure login using Spring Security.
 
-- **Spring Boot**: Framework for creating standalone, production-grade Spring-based applications.
-- **Thymeleaf**: Modern server-side Java template engine for web and standalone environments.
-- **Spring Security**: Powerful and customizable authentication and access control framework.
-- **Spring Data JPA**: Simplifies data access and persistence using the Java Persistence API.
-- **Hibernate**: Object-relational mapping tool for the Java programming language.
-- **PostgreSQL/H2 Database**: Choose your preferred relational database for storage.
+Password Hashing: Passwords are securely hashed before storing.
 
-## Getting Started
+Thymeleaf Templates: Frontend views rendered with Thymeleaf.
 
-### Prerequisites
+Technologies Used
+Spring Boot: Framework for building standalone production-ready Spring applications.
 
-- Java JDK (8 or higher)
-- Maven
-- Your preferred IDE (IntelliJ IDEA, Eclipse, etc.)
-- PostgreSQL/H2 Database (Make sure you have it installed and running)
+Thymeleaf: Server-side Java template engine for rendering views.
 
-### Installation
+Spring Security: Authentication and access control framework.
 
-1. Clone this repository:
+Spring Data JPA: Simplifies data access using JPA.
 
-   ```bash
-   git clone project
-   ```
+Hibernate: Object-relational mapping tool.
 
-2. Navigate to the project directory:
+PostgreSQL / H2 Database: Choose your preferred relational database.
 
-   ```bash
-   cd todo-list-app
-   ```
+Getting Started
+Prerequisites
+Java JDK 8 or higher
 
-3. Update `application.properties` with your database configuration:
-   ```
--spring.datasource.url=jdbc:postgresql://localhost:5432/db_todolist
--spring.datasource.username=postgres
--spring.datasource.password=root
--spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
--spring.jpa.hibernate.ddl-auto=update
+Maven
 
+Your preferred IDE (IntelliJ IDEA, Eclipse, etc.)
 
-4. Build the project:
+PostgreSQL or H2 database installed and running
 
-   ```bash
-   mvn clean package
-   ```
+Installation
+Clone the repository:
 
-5. Run the application
+bash
+Copy
+Edit
+git clone <repository-url>
+Navigate to the project directory:
 
-6. Open your browser and visit `http://localhost:8080` to access the application.
+bash
+Copy
+Edit
+cd todo-list-app
+Update application.properties with your database configuration:
 
-## Usage
+properties
+Copy
+Edit
+spring.datasource.url=jdbc:postgresql://localhost:5432/db_todolist
+spring.datasource.username=postgres
+spring.datasource.password=root
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=update
+Build the project:
 
-1. **Create an Account**: Click on the "Sign Up" link to register and create your account.
-2. **Login**: After creating an account, log in with your credentials.
-3. **Manage Tasks**: Add, edit, delete tasks from your to-do list.
+bash
+Copy
+Edit
+mvn clean package
+Run the application:
+
+bash
+Copy
+Edit
+mvn spring-boot:run
+Open your browser and visit http://localhost:8080 to access the app.
+
+Usage
+Create an Account: Click the "Sign Up" link to register.
+
+Login: After registering, log in with your credentials.
+
+Manage Tasks: Add, edit, or delete your to-do tasks.
